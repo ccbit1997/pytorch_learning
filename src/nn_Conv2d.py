@@ -30,7 +30,7 @@ class my_model(nn.Module):
         return x
 
 model1 = my_model()
-writer = SummaryWriter("logs/convs")
+writer = SummaryWriter("../logs/convs")
 step = 0
 for data in dataloader:
     img, label = data

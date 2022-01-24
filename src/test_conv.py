@@ -34,7 +34,7 @@ class maxpool_model(nn.Module):
 maxpool1 = maxpool_model()
 # output3 = maxpool1(input)
 
-writer = SummaryWriter("logs/maxpool")
+writer = SummaryWriter("../logs/maxpool")
 step = 0
 for data in dataloader:
     img, label = data

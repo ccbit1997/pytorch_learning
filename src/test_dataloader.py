@@ -20,7 +20,7 @@ img0, label0 = test_dataset[0]
 print(img0.shape)
 print(label0)
 
-writer = SummaryWriter("dataloader")
+writer = SummaryWriter("../dataloader")
 
 for epoch in range(3):
     step = 0

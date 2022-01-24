@@ -26,7 +26,7 @@ train_dataloader = DataLoader(dataset=test_dataset, batch_size=4, shuffle=True, 
 # print(test_dataset.classes[label])
 # img.show()
 # print(test_dataset[0])
-writer = SummaryWriter("logs")
+writer = SummaryWriter("../logs")
 classes = test_dataset.classes
 for i in range(10):
     img_tensor, label = test_dataset[i]

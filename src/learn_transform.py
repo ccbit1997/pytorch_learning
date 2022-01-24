@@ -5,13 +5,13 @@ from PIL import Image
 
 # 1、transform使用Totensor
 
-img_path = "dataset/train/ants/0013035.jpg"
+img_path = "../dataset/train/ants/0013035.jpg"
 img_PIL = Image.open(img_path)
 tensor_trans = transforms.ToTensor()
 img_tensor = tensor_trans(img_PIL)
 
 # 2、tensor数据类型
-writer = SummaryWriter("logs")
+writer = SummaryWriter("../logs")
 writer.add_image("Tensor_img", img_tensor)
 # 3、normalize
 print(img_tensor[0, 0, 0])

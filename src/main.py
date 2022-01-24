@@ -13,7 +13,7 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-    root_dir = "dataset/train"
+    root_dir = "../dataset/train"
     ants_label_dir = "ants"
     bees_label_dir = "bees"
     ants_dataset = MyData(root_dir, ants_label_dir)
